@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Disney+ Carousel in OwlCarousel</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap'>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="icon" href="//dmgz-splash-static.bamgrid.com/splash/builds/2f24625e6de81661349a1b4112251159ed50b44a_1600788003259/images/favicon-32x32.png" type="image/png" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="http://google.com" class="logo">
+          <img
+            height="48"
+            src="https://prod-static.disney-plus.net/eu-west-1/builds/5762bfe3a766168101ac40a889b59559364179ae_1592835981556/images/logo.svg"
+            alt="Disney+ Logo"
+        /></a>
+        <ul>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg
+                alt=""
+                aria-hidden="true"
+                aria-label="home"
+                color="#f9f9f9"
+                role="img"
+                version="1.1"
+                viewBox="0 0 36 36"
+                xmlns="http://www.w3.org/2000/svg"
+                data-route="HOME"
+                class="sc-cSHVUG fPNrHk"
+                style="
+                  height: 24px;
+                  min-width: 24px;
+                  width: 24px;
+                  z-index: auto;
+                "
+              >
+                <path
+                  d="M26.882 19.414v10.454h-5.974v-5.227h-5.974v5.227H8.961V19.414H5.227L17.921 6.72l12.694 12.694h-3.733z"
+                  class="sc-jzJRlG dPjNeY"
+                ></path>
+              </svg>
+              <span class="nav-text">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg
+                alt=""
+                aria-hidden="true"
+                aria-label="search"
+                color="#f9f9f9"
+                role="img"
+                version="1.1"
+                viewBox="0 0 36 36"
+                xmlns="http://www.w3.org/2000/svg"
+                data-route="SEARCH"
+                class="sc-cSHVUG fPNrHk"
+                style="
+                  height: 24px;
+                  min-width: 24px;
+                  width: 24px;
+                  z-index: auto;
+                "
+              >
+                <path
+                  d="M21.866 24.337c-3.933 2.762-9.398 2.386-12.914-1.13-3.936-3.936-3.936-10.318 0-14.255 3.937-3.936 10.32-3.936 14.256 0 3.327 3.327 3.842 8.402 1.545 12.27l4.56 4.558a2 2 0 0 1 0 2.829l-.174.173a2 2 0 0 1-2.828 0l-4.445-4.445zm-5.786-1.36a6.897 6.897 0 1 0 0-13.794 6.897 6.897 0 0 0 0 13.794z"
+                  class="sc-jzJRlG dPjNeY"
+                ></path>
+              </svg>
+              <span class="nav-text">Search</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg
+                alt=""
+                aria-hidden="true"
+                aria-label="watchlist"
+                color="#f9f9f9"
+                role="img"
+                version="1.1"
+                viewBox="0 0 36 36"
+                xmlns="http://www.w3.org/2000/svg"
+                data-route="WATCHLIST"
+                class="sc-cSHVUG fPNrHk"
+                style="
+                  height: 24px;
+                  min-width: 24px;
+                  width: 24px;
+                  z-index: auto;
+                "
+              >
+                <path
+                  d="M27.85 15.1H20.9V8.15a2.9 2.9 0 0 0-5.8 0v6.95H8.15a2.9 2.9 0 0 0 0 5.8h6.95v6.95a2.9 2.9 0 0 0 5.8 0V20.9h6.95a2.9 2.9 0 1 0 0-5.8z"
+                  class="sc-jzJRlG dPjNeY"
+                ></path>
+              </svg>
+              <span class="nav-text">Watchlist</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg
+                alt=""
+                aria-hidden="true"
+                aria-label="originals"
+                color="#f9f9f9"
+                role="img"
+                version="1.1"
+                viewBox="0 0 36 36"
+                xmlns="http://www.w3.org/2000/svg"
+                data-route="ORIGINALS"
+                class="sc-cSHVUG fPNrHk"
+                style="
+                  height: 24px;
+                  min-width: 24px;
+                  width: 24px;
+                  z-index: auto;
+                "
+              >
+                <path
+                  d="M17.625 26.028L10.44 30l1.373-8.412L6 15.631l8.033-1.228 3.592-7.653 3.592 7.653 8.033 1.228-5.813 5.957L24.81 30z"
+                  class="sc-jzJRlG dPjNeY"
+                ></path>
+              </svg>
+              <span class="nav-text">Originals</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg
+                alt=""
+                aria-hidden="true"
+                aria-label="movies"
+                color="#f9f9f9"
+                role="img"
+                version="1.1"
+                viewBox="0 0 36 36"
+                xmlns="http://www.w3.org/2000/svg"
+                data-route="MOVIES"
+                class="sc-cSHVUG fPNrHk"
+                style="
+                  height: 24px;
+                  min-width: 24px;
+                  width: 24px;
+                  z-index: auto;
+                "
+              >
+                <path
+                  d="M24.71 20.07a2.97 2.97 0 1 0-4.2-4.2 2.97 2.97 0 0 0 4.2 4.2m-12.262 0a2.97 2.97 0 1 0-4.2-4.2 2.97 2.97 0 0 0 4.2 4.2m6.173-10.31a2.969 2.969 0 1 0-4.199 4.198 2.969 2.969 0 0 0 4.199-4.198m0 12.262a2.969 2.969 0 1 0-4.199 4.198 2.969 2.969 0 0 0 4.199-4.198m-1.544-4.629a.846.846 0 1 0-1.197 1.196.846.846 0 0 0 1.197-1.196m18.06-.644c-3.33 6.913-8.165 9.928-11.635 11.24-2.57.971-4.762 1.178-5.949 1.208-.348.032-.698.053-1.052.053C10.287 29.25 5.25 24.213 5.25 18S10.287 6.75 16.5 6.75c6.214 0 11.25 5.037 11.25 11.25a11.19 11.19 0 0 1-2.493 7.054c2.832-1.612 5.844-4.382 8.138-9.143a.968.968 0 0 1 1.742.838"
+                  class="sc-jzJRlG dPjNeY"
+                ></path>
+              </svg>
+              <span class="nav-text">Movies</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg
+                alt=""
+                aria-hidden="true"
+                aria-label="series"
+                color="#f9f9f9"
+                role="img"
+                version="1.1"
+                viewBox="0 0 36 36"
+                xmlns="http://www.w3.org/2000/svg"
+                data-route="SERIES"
+                class="sc-cSHVUG fPNrHk"
+                style="
+                  height: 24px;
+                  min-width: 24px;
+                  width: 24px;
+                  z-index: auto;
+                "
+              >
+                <path
+                  d="M18.84 11.965h6.722a4 4 0 0 1 4 4V26a4 4 0 0 1-4 4H10.375a4 4 0 0 1-4-4V15.965a4 4 0 0 1 4-4h6.211l-3.981-3.981a1.162 1.162 0 1 1 1.643-1.644l3.465 3.465 3.464-3.465a1.162 1.162 0 0 1 1.644 1.644l-3.982 3.981zm6.428 7.73a1.718 1.718 0 1 0 0-3.436 1.718 1.718 0 0 0 0 3.436zm0 6.011a1.718 1.718 0 1 0 0-3.435 1.718 1.718 0 0 0 0 3.435z"
+                  class="sc-jzJRlG dPjNeY"
+                ></path>
+              </svg>
+              <span class="nav-text">Series</span>
+            </a>
+          </li>
+        </ul>
+        <div class="profile-holder">
+          <img
+            src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1A84ED73165B5AEE9AC9B91EEAAFC9574795113CB699822AD76C58909FB15CA5/scale?width=96&format=png"
+            alt="profile photo"
+          />
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="disney-carousel owl-carousel owl-theme">
+        <div class="slide">
+          <a
+            href="https://www.disneyplus.com/en-gb/movies/marvel-studios-black-panther/1GuXuYPj99Ke"
+            target="_blank"
+            ><div class="slide-asset">
+              <img
+                src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EDE4D0B27DDC168CA0BAC72D56675EB45B8AD6F162C60D798C44C371EE573ED2/scale?width=2880&aspectRatio=3.91&format=jpeg"
+                alt="taika watiti directing the mandalorian"
+              />
+              <img
+                class="overflow"
+                src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/93495BED40A4A7FDF52E4FFAAF30CF5FCCE27584FDFB1A5148A0581F84B298AC/scale?width=2880&aspectRatio=3.91"
+                alt="mandalorian logo"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a
+            href="https://www.disneyplus.com/en-gb/movies/hamilton/3uPmBHWlO6HJ"
+            target="_blank"
+            ><div class="slide-asset">
+              <img
+                src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2523FE4AF86155BD9A6E64A4FD5278A757371D609BA67484B688241D530EB590/scale?width=2880&aspectRatio=3.91&format=jpeg"
+                alt="hamilton the movie"
+              />
+              <img
+                class="overflow"
+                src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/ABDA16286A58542C6C859E4899CF18E7214D732AE47B201C3E50EFCAB92BE25F/scale?width=1440&aspectRatio=3.91"
+                alt="hamilton logo"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a
+            href="https://www.disneyplus.com/en-gb/movies/marvel-studios-black-panther/1GuXuYPj99Ke"
+            target="_blank"
+            ><div class="slide-asset">
+              <img
+                src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/687FEB28953B1B8D386B6BF7E37408DB527E013F376649E1EAC97DF405D21001/scale?width=2880&aspectRatio=3.91&format=jpeg"
+                alt="black panther"
+              />
+              <img
+                class="overflow"
+                src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4032A5D7097FC3EF436B480DA5B15F23090910B45E65AF00640CEED8ECD6BB79/scale?width=2880&aspectRatio=3.91"
+                alt="black panther logo"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a
+            href="https://www.disneyplus.com/en-gb/franchise/frozen"
+            target="_blank"
+            ><div class="slide-asset">
+              <img
+                src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D4D2A29FBB94033986DF847B0DFF33A784899970FB062AD6F8792DEAC4B9BD93/scale?width=2880&aspectRatio=3.91&format=jpeg"
+                alt="elsa from frozen 2"
+              />
+              <img
+                class="overflow"
+                src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6FE00ED430147D2406F54C911F6233D96587E0994C730ABBF8832D706DB69438/scale?width=2880&aspectRatio=3.91"
+                alt="frozen 2 coming soon"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="slide">
+          <a
+            href="https://www.disneyplus.com/en-gb/movies/maleficent-mistress-of-evil/5qvekLRRLhIl"
+            target="_blank"
+            ><div class="slide-asset">
+              <img
+                src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E6EE7F7D8A35FE4D566C1F8C157D43E80468DE03F09220928D557B7714DF8C2F/scale?width=2880&aspectRatio=3.91&format=jpeg"
+                alt="maleficent"
+              />
+              <img
+                class="overflow"
+                src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5473A1184920EBE73E4ADC8D260F41DFAC933E0D347B3CC6EC8903D5F156415A/scale?width=2880&aspectRatio=3.91"
+                alt="maleficent logo"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="catalogs recommended">
+      <div class="catalogs-inner">
+        <h2 class="subtitle site-bounds">Recommended For You</h2>
+        <div class="catalog owl-theme owl-carousel">
+          <article class="item">
+            <a
+              href="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/85421C05D1A4FB259979F1BB0900B3FC68422E6ABA034FCC683DBC3506CFA08F/scale?width=400&aspectRatio=1.78&format=jpeg"
+              class="item-link"
+            >
+              <div class="item-link-inner">
+                <img
+                  src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/85421C05D1A4FB259979F1BB0900B3FC68422E6ABA034FCC683DBC3506CFA08F/scale?width=400&aspectRatio=1.78&format=jpeg"
+                  alt="thor ragnarok"
+                />
+              </div>
+            </a>
+          </article>
+          <article class="item">
+            <a
+              href="https://www.disneyplus.com/en-gb/movies/moana/70GoJHflgHH9"
+              class="item-link"
+            >
+              <div class="item-link-inner">
+                <img
+                  src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D2B355334C344585EED5F805409CD9CB4FB6A8850C36C3409DFDB8FC25398F56/scale?width=400&aspectRatio=1.78&format=jpeg"
+                  alt="moana"
+                />
+              </div>
+            </a>
+          </article>
+          <article class="item">
+            <a
+              href="https://www.disneyplus.com/en-gb/movies/the-princess-diaries-2-royal-engagement/1QSMvAfkfO9z"
+              class="item-link"
+            >
+              <div class="item-link-inner">
+                <img
+                  src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3F3C79BAF640418D7418FFB9AD26352F354BFE69AB7B3D09192A53BD9C577DB5/scale?width=400&aspectRatio=1.78&format=jpeg"
+                  alt="princess diaries 2 royal engagement"
+                />
+              </div>
+            </a>
+          </article>
+          <article class="item">
+            <a
+              href="https://www.disneyplus.com/en-gb/movies/sister-act-2-back-in-the-habit/1WbTetIWWl5b"
+              class="item-link"
+            >
+              <div class="item-link-inner">
+                <img
+                  src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F1496F861CD1484ABF7A3A1BF5671EB74116BACC1895A51D258AE0D8D0A4E0C0/scale?width=400&aspectRatio=1.78&format=jpeg"
+                  alt="sister act 2 - back in the habit"
+                />
+              </div>
+            </a>
+          </article>
+          <article class="item">
+            <a
+              href="https://www.disneyplus.com/en-gb/movies/hercules/2e02rZ2TfE0f"
+              class="item-link"
+            >
+              <div class="item-link-inner">
+                <img
+                  src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A87284C9DC7A6F40FA0CFC28B83B4EBF363FC3FEE6EEB2C8B473C63F20C7099D/scale?width=400&aspectRatio=1.78&format=jpeg"
+                  alt="hercules"
+                />
+              </div>
+            </a>
+          </article>
+          <article class="item">
+            <a
+              href="https://www.disneyplus.com/en-gb/movies/the-emperors-new-groove/3jFGExhfWgxg"
+              class="item-link"
+            >
+              <div class="item-link-inner">
+                <img
+                  src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/CFB5C5FB53C2C1B7B71B82CB2308008EE197BC695F926C62C11541603A191836/scale?width=400&aspectRatio=1.78&format=jpeg"
+                  alt="the emperors new groove"
+                />
+              </div>
+            </a>
+          </article>
+          <article class="item">
+            <a
+              href="https://www.disneyplus.com/en-gb/movies/frozen-ii/28vdy71kJrjb"
+              class="item-link"
+            >
+              <div class="item-link-inner">
+                <img
+                  src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A70B8679638EF3BE614A445A1D1DBEE9367648597889A462C3A852924766A2B5/scale?width=400&aspectRatio=1.78&format=jpeg"
+                  alt="frozen 2"
+                />
+              </div>
+            </a>
+          </article>
+          <article class="item">
+            <a
+              href="https://www.disneyplus.com/en-gb/movies/the-princess-and-the-frog/7TPAcC8QPGpm"
+              class="item-link"
+            >
+              <div class="item-link-inner">
+                <img
+                  src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/62476C7122825A55C1AAC7E43F06BF7FDB3CCDC3096025DF682A2B9474E46C2C/scale?width=400&aspectRatio=1.78&format=jpeg"
+                  alt="the princess and the frog"
+                />
+              </div>
+            </a>
+          </article>
+          <article class="item">
+            <a
+              href="https://www.disneyplus.com/en-gb/movies/marvel-studios-captain-marvel/38xJGlLAQy9a"
+              class="item-link"
+            >
+              <div class="item-link-inner">
+                <img
+                  src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E912D90141FB7FA05C7BDF5092BDA61F37EFE8DC27065BC7B989FB0A456B3CCE/scale?width=400&aspectRatio=1.78&format=jpeg"
+                  alt="the captian marvel"
+                />
+              </div>
+            </a>
+          </article>
+          <article class="item">
+            <a
+              href="https://www.disneyplus.com/en-gb/movies/marvel-studios-avengers-endgame/aRbVJUb2h2Rf"
+              class="item-link"
+            >
+              <div class="item-link-inner">
+                <img
+                  src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/267B62264372927BB85811A524E0E7A40A6768A5F7E5BEB95FB49CF7189312BE/scale?width=400&aspectRatio=1.78&format=jpeg"
+                  alt="avengers endgame"
+                />
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="catalogs continue-watching">
+      <div class="catalogs-inner">
+        <h2 class="subtitle site-bounds">Continue Watching</h2>
+        <div class="catalog owl-theme owl-carousel">
+          <article class="item">
+            <a
+              href="https://www.disneyplus.com/en-gb/movies/the-princess-and-the-frog/7TPAcC8QPGpm"
+              class="item-link"
+            >
+              <div class="item-link-inner">
+                <div class="continue-info">
+                  <span class="title movie">The Princess and the Frog</span>
+                  <div class="controls">
+                    <button class="play">
+                      <svg
+                        alt=""
+                        aria-hidden="true"
+                        aria-label="play"
+                        color="white"
+                        role="img"
+                        version="1.1"
+                        viewBox="0 0 36 36"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="sc-cSHVUG fPNrHk"
+                      >
+                        <path
+                          d="M27.147 20.421L11.27 29.274A2.2 2.2 0 0 1 8 27.353V9.647a2.2 2.2 0 0 1 3.271-1.921l15.876 8.852a2.2 2.2 0 0 1 0 3.843z"
+                          class="sc-jzJRlG dPjNeY"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button href="#" class="info">
+                      <svg
+                        alt=""
+                        aria-hidden="true"
+                        aria-label="info"
+                        color="white"
+                        role="img"
+                        version="1.1"
+                        viewBox="0 0 36 36"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="sc-cSHVUG fPNrHk"
+                      >
+                        <path
+                          d="M22.378 0c2.412 0 3.618 1.642 3.618 3.523 0 2.349-2.095 4.522-4.822 4.522-2.284 0-3.616-1.35-3.553-3.582 0-1.877 1.586-4.462 4.757-4.462zM14.956 36c-1.904 0-3.299-1.174-1.967-6.343l2.185-9.166c0.38-1.465 0.443-2.054 0-2.054-0.571 0-3.040 1.012-4.504 2.011l-0.95-1.584c4.63-3.935 9.956-6.241 12.242-6.241 1.903 0 2.219 2.291 1.269 5.814l-2.504 9.634c-0.443 1.701-0.254 2.288 0.191 2.288 0.571 0 2.443-0.706 4.282-2.173l1.080 1.465c-4.504 4.585-9.423 6.349-11.324 6.349z"
+                          class="sc-jzJRlG dPjNeY"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      id="progressBar"
+                      data-progress="50"
+                    ></div>
+                  </div>
+                </div>
+                <img
+                  src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/62476C7122825A55C1AAC7E43F06BF7FDB3CCDC3096025DF682A2B9474E46C2C/scale?width=400&aspectRatio=1.78&format=jpeg"
+                  alt="the princess and the frog"
+                />
+              </div>
+            </a>
+          </article>
+          <article class="item">
+            <a
+              href="https://www.disneyplus.com/en-gb/movies/marvel-studios-captain-marvel/38xJGlLAQy9a"
+              class="item-link"
+            >
+              <div class="item-link-inner">
+                <div class="continue-info">
+                  <span class="title movie">Captain Marvel</span>
+                  <div class="controls">
+                    <button class="play">
+                      <svg
+                        alt=""
+                        aria-hidden="true"
+                        aria-label="play"
+                        color="white"
+                        role="img"
+                        version="1.1"
+                        viewBox="0 0 36 36"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="sc-cSHVUG fPNrHk"
+                      >
+                        <path
+                          d="M27.147 20.421L11.27 29.274A2.2 2.2 0 0 1 8 27.353V9.647a2.2 2.2 0 0 1 3.271-1.921l15.876 8.852a2.2 2.2 0 0 1 0 3.843z"
+                          class="sc-jzJRlG dPjNeY"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button href="#" class="info">
+                      <svg
+                        alt=""
+                        aria-hidden="true"
+                        aria-label="info"
+                        color="white"
+                        role="img"
+                        version="1.1"
+                        viewBox="0 0 36 36"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="sc-cSHVUG fPNrHk"
+                      >
+                        <path
+                          d="M22.378 0c2.412 0 3.618 1.642 3.618 3.523 0 2.349-2.095 4.522-4.822 4.522-2.284 0-3.616-1.35-3.553-3.582 0-1.877 1.586-4.462 4.757-4.462zM14.956 36c-1.904 0-3.299-1.174-1.967-6.343l2.185-9.166c0.38-1.465 0.443-2.054 0-2.054-0.571 0-3.040 1.012-4.504 2.011l-0.95-1.584c4.63-3.935 9.956-6.241 12.242-6.241 1.903 0 2.219 2.291 1.269 5.814l-2.504 9.634c-0.443 1.701-0.254 2.288 0.191 2.288 0.571 0 2.443-0.706 4.282-2.173l1.080 1.465c-4.504 4.585-9.423 6.349-11.324 6.349z"
+                          class="sc-jzJRlG dPjNeY"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      id="progressBar"
+                      data-progress="34"
+                    ></div>
+                  </div>
+                </div>
+                <img
+                  src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E912D90141FB7FA05C7BDF5092BDA61F37EFE8DC27065BC7B989FB0A456B3CCE/scale?width=400&aspectRatio=1.78&format=jpeg"
+                  alt="the princess and the frog"
+                />
+              </div>
+            </a>
+          </article>
+          <article class="item">
+            <a
+              href="https://www.disneyplus.com/en-gb/movies/the-hunchback-of-notre-dame/796BIJb9AlES"
+              class="item-link"
+            >
+              <div class="item-link-inner">
+                <div class="continue-info">
+                  <span class="title movie">The Hunchback of Notre Dame</span>
+                  <div class="controls">
+                    <button class="play">
+                      <svg
+                        alt=""
+                        aria-hidden="true"
+                        aria-label="play"
+                        color="white"
+                        role="img"
+                        version="1.1"
+                        viewBox="0 0 36 36"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="sc-cSHVUG fPNrHk"
+                      >
+                        <path
+                          d="M27.147 20.421L11.27 29.274A2.2 2.2 0 0 1 8 27.353V9.647a2.2 2.2 0 0 1 3.271-1.921l15.876 8.852a2.2 2.2 0 0 1 0 3.843z"
+                          class="sc-jzJRlG dPjNeY"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button href="#" class="info">
+                      <svg
+                        alt=""
+                        aria-hidden="true"
+                        aria-label="info"
+                        color="white"
+                        role="img"
+                        version="1.1"
+                        viewBox="0 0 36 36"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="sc-cSHVUG fPNrHk"
+                      >
+                        <path
+                          d="M22.378 0c2.412 0 3.618 1.642 3.618 3.523 0 2.349-2.095 4.522-4.822 4.522-2.284 0-3.616-1.35-3.553-3.582 0-1.877 1.586-4.462 4.757-4.462zM14.956 36c-1.904 0-3.299-1.174-1.967-6.343l2.185-9.166c0.38-1.465 0.443-2.054 0-2.054-0.571 0-3.040 1.012-4.504 2.011l-0.95-1.584c4.63-3.935 9.956-6.241 12.242-6.241 1.903 0 2.219 2.291 1.269 5.814l-2.504 9.634c-0.443 1.701-0.254 2.288 0.191 2.288 0.571 0 2.443-0.706 4.282-2.173l1.080 1.465c-4.504 4.585-9.423 6.349-11.324 6.349z"
+                          class="sc-jzJRlG dPjNeY"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      id="progressBar"
+                      data-progress="23"
+                    ></div>
+                  </div>
+                </div>
+                <img
+                  src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/CFD3932C4BE73BBF638A3847710DC01351E7251D9F554F329CF2A0725C657E7A/scale?width=400&aspectRatio=1.78&format=jpeg"
+                  alt="hunchback"
+                />
+              </div>
+            </a>
+          </article>
+          <article class="item">
+            <a
+              href="https://www.disneyplus.com/en-gb/series/disney-gravity-falls/HZxayxzMJqed"
+              class="item-link"
+            >
+              <div class="item-link-inner">
+                <div class="continue-info">
+                  <span class="title series">Gravity Falls</span>
+                  <span class="title episode"
+                    >S2: E14 The Stanchurian C...</span
+                  >
+                  <div class="controls">
+                    <button class="play">
+                      <svg
+                        alt=""
+                        aria-hidden="true"
+                        aria-label="play"
+                        color="white"
+                        role="img"
+                        version="1.1"
+                        viewBox="0 0 36 36"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="sc-cSHVUG fPNrHk"
+                      >
+                        <path
+                          d="M27.147 20.421L11.27 29.274A2.2 2.2 0 0 1 8 27.353V9.647a2.2 2.2 0 0 1 3.271-1.921l15.876 8.852a2.2 2.2 0 0 1 0 3.843z"
+                          class="sc-jzJRlG dPjNeY"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button href="#" class="info">
+                      <svg
+                        alt=""
+                        aria-hidden="true"
+                        aria-label="info"
+                        color="white"
+                        role="img"
+                        version="1.1"
+                        viewBox="0 0 36 36"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="sc-cSHVUG fPNrHk"
+                      >
+                        <path
+                          d="M22.378 0c2.412 0 3.618 1.642 3.618 3.523 0 2.349-2.095 4.522-4.822 4.522-2.284 0-3.616-1.35-3.553-3.582 0-1.877 1.586-4.462 4.757-4.462zM14.956 36c-1.904 0-3.299-1.174-1.967-6.343l2.185-9.166c0.38-1.465 0.443-2.054 0-2.054-0.571 0-3.040 1.012-4.504 2.011l-0.95-1.584c4.63-3.935 9.956-6.241 12.242-6.241 1.903 0 2.219 2.291 1.269 5.814l-2.504 9.634c-0.443 1.701-0.254 2.288 0.191 2.288 0.571 0 2.443-0.706 4.282-2.173l1.080 1.465c-4.504 4.585-9.423 6.349-11.324 6.349z"
+                          class="sc-jzJRlG dPjNeY"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      id="progressBar"
+                      data-progress="87"
+                    ></div>
+                  </div>
+                </div>
+                <img
+                  src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1F74B0929E276B5DF752D2036ADF389FD942417934E7C25C8389E4543ABD6F06/scale?width=400&aspectRatio=1.78&format=jpeg"
+                  alt="gravity falls"
+                />
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/nanobar/0.4.2/nanobar.min.js'></script>
+    <script>
+      $(function () {
+        $(".disney-carousel").owlCarousel({
+          center: true,
+          items: 1,
+          loop: true,
+          margin: 20,
+          stagePadding: 70,
+          nav: true,
+          navText: [
+          '<svg alt="" aria-hidden="true" aria-label="arrowLeft" class="arrow-left" color="white" role="img" version="1.1" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" class="sc-cSHVUG fPNrHk" style="height: 20px; min-width: 20px; width: 20px; z-index: auto;"><path d="M22.324 28.008c.537.577.355 1.433-.326 1.809a1.44 1.44 0 0 1-.72.183c-.398 0-.786-.151-1.048-.438L10.06 18.588a1.126 1.126 0 0 1 0-1.555L20.233 6.09c.438-.468 1.198-.564 1.767-.25.681.377.863 1.23.325 1.808l-9.446 10.164 9.446 10.196zM11.112 17.615a.31.31 0 0 1 0 .391l.182-.195-.182-.196zM21.308 7.094c-.01-.006-.053 0-.029-.027a.07.07 0 0 0 .029.027zm-.025 21.499a.95.95 0 0 1-.006-.008l.006.008z" class="sc-jzJRlG dPjNeY"></path></svg>',
+          '<svg alt="" class="arrow-right" aria-hidden="true" aria-label="arrowRight" color="white" role="img" version="1.1" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" class="sc-cSHVUG fPNrHk" style="height: 20px; min-width: 20px; width: 20px; z-index: auto;"><path d="M13.065 7.65c-.538-.578-.355-1.433.325-1.81a1.44 1.44 0 0 1 .72-.182c.398 0 .786.15 1.048.437L25.327 17.07a1.126 1.126 0 0 1 0 1.555L15.155 29.568c-.438.468-1.198.563-1.767.25-.681-.377-.863-1.23-.325-1.809l9.446-10.164L13.065 7.65zm11.211 10.393a.31.31 0 0 1 0-.391l-.181.194.181.197zM14.081 28.564c.01.006.053 0 .028.027a.07.07 0 0 0-.028-.027zm.024-21.5a.95.95 0 0 1 .007.008l-.007-.007z" class="sc-jzJRlG dPjNeY"></path></svg>'] });
+      
+        $(".catalog").owlCarousel({
+          center: false,
+          items: 4,
+          loop: false,
+          dots: false,
+          margin: 20,
+          navSpeed: 100,
+          stagePadding: 70,
+          slideBy: 4,
+          nav: true,
+          navText: [
+          '<svg alt="" aria-hidden="true" aria-label="arrowLeft" class="arrow-left" color="white" role="img" version="1.1" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" class="sc-cSHVUG fPNrHk" style="height: 20px; min-width: 20px; width: 20px; z-index: auto;"><path d="M22.324 28.008c.537.577.355 1.433-.326 1.809a1.44 1.44 0 0 1-.72.183c-.398 0-.786-.151-1.048-.438L10.06 18.588a1.126 1.126 0 0 1 0-1.555L20.233 6.09c.438-.468 1.198-.564 1.767-.25.681.377.863 1.23.325 1.808l-9.446 10.164 9.446 10.196zM11.112 17.615a.31.31 0 0 1 0 .391l.182-.195-.182-.196zM21.308 7.094c-.01-.006-.053 0-.029-.027a.07.07 0 0 0 .029.027zm-.025 21.499a.95.95 0 0 1-.006-.008l.006.008z" class="sc-jzJRlG dPjNeY"></path></svg>',
+          '<svg alt="" class="arrow-right" aria-hidden="true" aria-label="arrowRight" color="white" role="img" version="1.1" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" class="sc-cSHVUG fPNrHk" style="height: 20px; min-width: 20px; width: 20px; z-index: auto;"><path d="M13.065 7.65c-.538-.578-.355-1.433.325-1.81a1.44 1.44 0 0 1 .72-.182c.398 0 .786.15 1.048.437L25.327 17.07a1.126 1.126 0 0 1 0 1.555L15.155 29.568c-.438.468-1.198.563-1.767.25-.681-.377-.863-1.23-.325-1.809l9.446-10.164L13.065 7.65zm11.211 10.393a.31.31 0 0 1 0-.391l-.181.194.181.197zM14.081 28.564c.01.006.053 0 .028.027a.07.07 0 0 0-.028-.027zm.024-21.5a.95.95 0 0 1 .007.008l-.007-.007z" class="sc-jzJRlG dPjNeY"></path></svg>'] });
+
+        $('.owl-item.active .progress-bar').each(function () {
+          let percent = $(this).attr('data-progress');
+          var options = {
+            classname: 'my-class',
+            id: 'my-id',
+            target: this };
+      
+          var nanobar = new Nanobar(options);
+      
+          nanobar.go(percent);
+        });
+      });
+    </script>
+  </body>
+</html>

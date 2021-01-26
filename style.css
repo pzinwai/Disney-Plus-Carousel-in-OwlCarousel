@@ -1,0 +1,438 @@
+.disney-carousel .owl-item a:after {
+  content: "";
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 4px;
+  border-radius: 4px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0);
+  -o-border-image: initial;
+     border-image: initial;
+  transition: border 150ms linear 0s;
+}
+.disney-carousel .owl-item a:hover:after {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.catalogs .catalogs-inner .catalog .item a.item-link:after {
+  content: "";
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0;
+  border-radius: 4px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0);
+  -o-border-image: initial;
+     border-image: initial;
+  transition: border 150ms linear 0s;
+}
+.catalogs .catalogs-inner .catalog .item a.item-link:hover:after {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+* {
+  outline: none;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #1a1d29;
+  color: #f9f9f9;
+}
+
+.site-bounds {
+  padding: 0 75px;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav.nav {
+  background-color: #1b1d29;
+  z-index: 500;
+  height: 72px;
+  padding: 0 36px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+nav.nav .nav-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+nav.nav .nav-inner a.logo {
+  margin-right: 32px;
+}
+nav.nav .nav-inner ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+nav.nav .nav-inner ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 28px 23px;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 1.42px;
+}
+nav.nav .nav-inner ul li a svg {
+  fill: white;
+}
+nav.nav .nav-inner ul li a span {
+  margin-left: 8px;
+  position: relative;
+}
+nav.nav .nav-inner ul li a span:before {
+  width: 100%;
+  height: 2px;
+  content: "";
+  background: #f9f9f9;
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+nav.nav .nav-inner ul li a:hover span:before {
+  transform: scaleX(1);
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+nav.nav .nav-inner .profile-holder {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  margin-left: auto;
+}
+
+.disney-carousel {
+  padding-top: 100px;
+  height: calc(100% - 50px);
+  position: relative;
+}
+.disney-carousel .owl-stage {
+  margin-bottom: 50px;
+}
+.disney-carousel img {
+  max-width: 100%;
+}
+.disney-carousel img.overflow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.disney-carousel .owl-item {
+  pointer-events: none;
+}
+.disney-carousel .owl-item.active {
+  pointer-events: initial;
+}
+.disney-carousel .owl-item.active a {
+  opacity: 1;
+  transition: all 150ms cubic-bezier(0.55, 0.085, 0.68, 0.53) 350ms !important;
+}
+.disney-carousel .owl-item.active a img.overflow {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 350ms 350ms ease-in all;
+}
+.disney-carousel .owl-item a {
+  box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
+  opacity: 0.5;
+  transition: all 150ms cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s !important;
+  display: inline-block;
+  border-radius: 4px;
+  overflow: hidden;
+  background: linear-gradient(#30323e, #1e1f2a) 0% 0%/cover;
+}
+.disney-carousel .owl-item a img.overflow {
+  transform: translateX(25px);
+  opacity: 0;
+  transition: 350ms 350ms ease-in all;
+}
+.disney-carousel .owl-dots {
+  display: block;
+  position: absolute;
+  text-align: right;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 0;
+  width: auto;
+  bottom: 55px !important;
+  right: 85px !important;
+}
+.disney-carousel .owl-dots .owl-theme .owl-dots .owl-dot span {
+  width: 9px;
+  height: 9px;
+  margin: 5px 6px;
+  background: #969eab;
+}
+.disney-carousel .owl-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 0;
+  transform: translatey(-50%);
+  top: 50%;
+}
+.disney-carousel .owl-nav button {
+  width: 55px !important;
+  margin: 0;
+}
+.disney-carousel .owl-nav button svg.arrow-left,
+.disney-carousel .owl-nav button svg.arrow-right {
+  height: auto !important;
+  width: 36px !important;
+  fill: white;
+}
+.disney-carousel .owl-nav button.owl-prev {
+  background: transparent !important;
+  left: 0;
+  display: inline-block;
+  position: absolute;
+  font-size: 40px;
+  display: inline-block;
+  color: white;
+  transform: translatey(-50%);
+  margin-top: 0;
+}
+.disney-carousel .owl-nav button.owl-prev:hover {
+  background: transparent !important;
+}
+.disney-carousel .owl-nav button.owl-next {
+  margin-top: 0;
+  display: inline-block;
+  background: transparent !important;
+  position: absolute;
+  font-size: 40px;
+  display: inline-block;
+  color: white;
+  transform: translatey(-50%);
+  right: 0;
+}
+.disney-carousel .owl-nav button:hover {
+  background: transparent !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: white !important;
+}
+
+.catalogs {
+  padding-bottom: 20px;
+}
+.catalogs-inner {
+  display: inline;
+}
+.catalogs .catalogs-inner .subtitle {
+  margin: 11px 0;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+.catalogs .catalogs-inner .catalog .owl-stage-outer {
+  overflow: visible;
+}
+.catalogs .catalogs-inner .catalog .owl-item {
+  opacity: 0.4;
+  transition: 150ms ease-out opacity;
+}
+.catalogs .catalogs-inner .catalog .owl-item.active {
+  opacity: 1;
+  transition: 150ms ease-out opacity;
+}
+.catalogs .catalogs-inner .catalog .item {
+  display: inline-block;
+  width: 100%;
+}
+.catalogs .catalogs-inner .catalog .item a.item-link {
+  position: relative;
+  text-decoration: none;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
+  cursor: pointer;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  transform: scale(1, 1) translateZ(0px);
+  transition: 300ms ease-out transform, 300ms ease-out box-shadow;
+  border-radius: 4px;
+}
+.catalogs .catalogs-inner .catalog .item a.item-link:hover {
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 40px 58px -16px, rgba(0, 0, 0, 0.72) 0px 30px 22px -10px;
+  transform: scale(1.05, 1.05) translateZ(0px) translate3d(0px, 0px, 0px);
+  transition: 300ms ease-out all;
+}
+.catalogs .catalogs-inner .catalog .item a.item-link:hover .continue-info {
+  background: rgba(0, 0, 0, 0.7);
+  transition: 300ms ease-out all;
+}
+.catalogs .catalogs-inner .catalog .item a.item-link:hover .continue-info .title {
+  transition: 300ms ease-out opacity;
+  opacity: 1;
+}
+.catalogs .catalogs-inner .catalog .item a.item-link:hover .continue-info .controls {
+  margin-bottom: 5px;
+  opacity: 1;
+  transition: 300ms ease-out opacity, 300ms ease-out transform;
+  transform: none;
+}
+.catalogs .catalogs-inner .catalog .item a.item-link:hover .continue-info .progress {
+  transform: scaleX(0.9) translateY(-15px);
+  border-radius: 20px;
+  overflow: hidden;
+  transform: 300ms ease-out all;
+}
+.catalogs .catalogs-inner .catalog .item a.item-link .continue-info {
+  padding: 15px 16px 26px;
+  background: rgba(0, 0, 0, 0);
+  transition: 300ms ease-out all;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+.catalogs .catalogs-inner .catalog .item a.item-link .continue-info .title {
+  opacity: 0;
+  transition: 300ms ease-out opacity;
+  color: white;
+  text-decoration: none;
+}
+.catalogs .catalogs-inner .catalog .item a.item-link .continue-info .title.series {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.catalogs .catalogs-inner .catalog .item a.item-link .continue-info .title.episode, .catalogs .catalogs-inner .catalog .item a.item-link .continue-info .title.movie {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.catalogs .catalogs-inner .catalog .item a.item-link .continue-info .controls {
+  margin-top: auto;
+  z-index: 50;
+  background: transparent;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 300ms ease-out opacity, 300ms ease-out transform;
+}
+.catalogs .catalogs-inner .catalog .item a.item-link .continue-info .controls button {
+  transition: 300ms ease-out transform;
+  margin-right: 16px;
+  background: rgba(225, 225, 225, 0);
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+.catalogs .catalogs-inner .catalog .item a.item-link .continue-info .controls button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 300ms ease-out transform;
+}
+.catalogs .catalogs-inner .catalog .item a.item-link .continue-info .controls button svg {
+  fill: #f9f9f9;
+  min-width: none;
+  z-index: auto;
+  width: 13px;
+  height: 19px;
+}
+.catalogs .catalogs-inner .catalog .item a.item-link .continue-info .progress {
+  position: absolute;
+  bottom: 0;
+  border-radius: 0;
+  transform: none;
+  transition: 300ms ease-out transform, 300ms ease-out border-radius;
+  left: 0;
+  right: 0;
+}
+.catalogs .catalogs-inner .catalog .item a.item-link .continue-info .progress .progress-bar {
+  background: rgba(225, 225, 225, 0.5);
+}
+.catalogs .catalogs-inner .catalog .item a.item-link .continue-info .progress .progress-bar .bar {
+  background: #02e7f5;
+}
+.catalogs .owl-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 0;
+  transform: translatey(-50%);
+  top: 50%;
+}
+.catalogs .owl-nav button {
+  width: 55px !important;
+  margin: 0;
+  height: 188px;
+  margin: 0 !important;
+  opacity: 0;
+  transition: 150ms ease-in opacity;
+}
+.catalogs .owl-nav button.disabled {
+  opacity: 0;
+  pointer-events: none;
+  transition: 150ms ease-in opacity;
+}
+.catalogs .owl-nav button.disabled:hover {
+  opacity: 0;
+  transition: 150ms ease-in opacity;
+}
+.catalogs .owl-nav button:hover {
+  transition: 150ms ease-in opacity;
+  opacity: 0.5 !important;
+}
+.catalogs .owl-nav button svg.arrow-left,
+.catalogs .owl-nav button svg.arrow-right {
+  height: auto !important;
+  width: 36px !important;
+  fill: white;
+}
+.catalogs .owl-nav button.owl-prev {
+  background: transparent !important;
+  left: 0;
+  display: inline-block;
+  position: absolute;
+  font-size: 40px;
+  display: inline-block;
+  color: white;
+  transform: translatey(-50%);
+  margin-top: 0;
+  pointer-events: initial;
+}
+.catalogs .owl-nav button.owl-next {
+  margin-top: 0;
+  display: inline-block;
+  background: transparent !important;
+  position: absolute;
+  font-size: 40px;
+  display: inline-block;
+  color: white;
+  transform: translatey(-50%);
+  right: 0;
+}
